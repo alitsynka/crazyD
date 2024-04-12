@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Popins-Regular';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Popins-Medium';
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Popins-SemiBold';
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Popins-Black';
+    src: url("../fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Popins-Bold';
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+*,
+*::after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li, h1, h2, h3, h4, p {
+    font-family: 'Popins-Regular';
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+button {
+    background: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 0 0;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    text-align: center;
+    font-family: 'Popins-Regular';
+    -ms-overflow-style: none;
+    /*overflow: hidden;*/
+}
+
+/*body::-webkit-scrollbar {*/
+/*    width: 0;*/
+/*    display: none; !*chrome*!*/
+/*}*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-family: 'Popins-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: rgba(73, 80, 87, 0.5);
+}
+textarea::placeholder {
+    font-family: 'Popins-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: rgba(73, 80, 87, 0.5);
+}

@@ -1,0 +1,171 @@
+@import "../../assets/styles/mixines";
+@import "../../assets/styles/variables";
+
+
+.Wrapper {
+  padding-top: 120px;
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h3 {
+      @include FontSemiBold(48, 67);
+      margin-bottom: 32px;
+      text-align: center;
+      @include Dott;
+      @include break(500px) {
+        margin-bottom: 2px;
+      }
+    }
+
+    .Desc {
+      @include FontRegular(18, 29);
+      color: rgba(0, 0, 0, 1);
+      text-align: center;
+      max-width: 720px;
+      @include break(500px) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .Form {
+      width: 100%;
+      max-width: 640px;
+      margin-top: 72px;
+
+      .InputsWr {
+        width: 100%;
+        display: flex;
+        column-gap: 20px;
+        @include break(550px) {
+          flex-direction: column;
+        }
+
+        .InputWr {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 30px;
+          position: relative;
+          @include break(550px) {
+            margin-bottom: 20px;
+          }
+
+          > label {
+            @include FontSemiBold(12, 12);
+            font-family: 'Popins-Bold';
+            margin-bottom: 12px;
+          }
+
+          .Input {
+            width: 100%;
+            height: 48px;
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            @include FontRegular(14, 14);
+            color: rgba(0, 0, 0, 1);
+            border-radius: 10px;
+            padding: 11px 13px;
+          }
+
+          .ErrInput {
+            border: 1px solid $accentColor;
+          }
+
+          .Err {
+            @include ErrText;
+            @include break(540px) {
+              bottom: -12px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      .TextAreaWr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+
+        > label {
+          @include FontSemiBold(12, 12);
+          font-family: 'Popins-Bold';
+          margin-bottom: 12px;
+        }
+
+        .Desc {
+          width: 100%;
+          height: 100%;
+          max-width: 640px;
+          min-height: 150px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          @include FontRegular(14, 14);
+          color: rgba(0, 0, 0, 1);
+          border-radius: 10px;
+          padding: 11px 13px;
+          resize: none;
+          margin-bottom: 30px;
+        }
+
+        .ErrDesc {
+          border: 1px solid $accentColor;
+        }
+
+        .Err {
+          @include ErrText;
+          bottom: 14px;
+          @include break(540px) {
+            bottom: 18px;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .SubmitBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 1);
+        padding: 12px;
+        width: 100%;
+        height: 48px;
+        @include FontSemiBold(16, 24);
+        color: #ffffff;
+        border-radius: 30px;
+        margin-bottom: 72px;
+      }
+
+    }
+
+    .Footer {
+      > svg {
+        cursor: pointer;
+      }
+
+      .Desc {
+        width: 100%;
+        margin-top: 20px;
+        max-width: 500px;
+        @include FontRegular(14, 26);
+        color: rgba(73, 80, 87, 0.5);
+        text-align: center;
+
+        @include break(540px) {
+          > span {
+            display: block;
+            margin-top: 10px;
+          }
+        }
+      }
+
+
+    }
+  }
+}

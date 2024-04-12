@@ -1,0 +1,115 @@
+@import "../../assets/styles/mixines";
+@import "../../assets/styles/variables";
+
+
+.Wrapper {
+  @include CommonWrapper;
+  height: 100%;
+  overflow: hidden;
+
+
+  .Container {
+    @include CommonContainer;
+    padding: 0 0 100px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include break(540px) {
+      padding: 0 0;
+    }
+
+    .Title {
+      @include FontSemiBold(48, 92);
+      @include Dott;
+      margin-bottom: 72px;
+      @include break(550px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .ProjectsBlock {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+
+      @include break(800px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .Project {
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        padding: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        overflow: hidden;
+        @include break(1000px) {
+          gap: 16px;
+        }
+        position: relative;
+
+        .ImgBlock {
+          width: 100%;
+          max-width: 160px;
+          height: 100%;
+          border-radius: 8px;
+          background: rgba(11, 5, 2, 1);
+
+          @include break(700px) {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+          }
+          @include break(700px) {
+            background: none;
+            max-width: 32%;
+            max-height: 80%;
+          }
+
+          .MobImg {
+            display: none;
+            @include break(700px) {
+              display: block;
+              opacity: 30%;
+            }
+          }
+
+          > img {
+            width: 100%;
+            height: 100%;
+            @include break(700px) {
+              display: none;
+            }
+          }
+        }
+
+        .DescBlock {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          .Title {
+            @include FontSemiBold(24, 34);
+            @include Dott;
+            margin: 16px 0 8px 0;
+
+            @include break(550px) {
+              @include FontSemiBold(21, 30);
+              margin: 0px 0 2px 0;
+            }
+          }
+
+          .Desc {
+            @include FontRegular(14, 24);
+            color: rgba(0, 0, 0, 1);
+          }
+        }
+      }
+    }
+  }
+}

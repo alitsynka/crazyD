@@ -1,0 +1,64 @@
+@import './variables';
+
+@mixin break($width) {
+  @media screen and (max-width: $width) {
+    @content
+  }
+}
+
+@mixin CommonWrapper {
+  width: 100%;
+  padding: 24px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include break(900px) {
+    padding: 20px 25px 72px 25px;
+  }
+  @include break(540px) {
+    padding: 20px 16px 72px 16px;
+  }
+}
+
+@mixin CommonContainer {
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+@mixin Dott {
+  > span {
+    color: $accentColor;
+  }
+}
+
+@mixin FontRegular($fontSize, $lineHeight) {
+  font-family: 'Popins-Regular';
+  font-size: $fontSize + px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: $lineHeight + px;
+  text-align: left;
+  transition: all 0.1s ease-in;
+}
+
+@mixin FontSemiBold($fontSize, $lineHeight) {
+  font-family: 'Popins-SemiBold';
+  font-size: $fontSize + px;
+  font-weight: 600;
+  line-height: $lineHeight + px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  transition: all 0.1s ease-in;
+}
+
+
+@mixin ErrText {
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  @include FontRegular(12, 10);
+  color: $accentColor;
+
+}

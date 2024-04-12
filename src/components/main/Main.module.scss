@@ -1,0 +1,122 @@
+@import "../../assets/styles/mixines";
+@import "../../assets/styles/variables";
+
+
+.Wrapper {
+  background: rgba(11, 5, 2, 1);
+  @include CommonWrapper;
+  height: 100%;
+  overflow: hidden;
+
+  .Container {
+    @include CommonContainer;
+    padding: 150px 0 200px 0;
+    position: relative;
+
+
+    .DescBlock {
+      position: relative;
+      z-index: 99;
+
+      .Title {
+        @include FontSemiBold(48, 92);
+        color: #ffffff;
+        @include Dott;
+        @include break(500px) {
+          line-height: 66px;
+          text-align: center;
+        }
+      }
+
+      .Desc {
+        @include FontRegular(18, 29);
+        color: white;
+        max-width: 560px;
+        margin-top: 8px;
+        @include break(500px) {
+          text-align: center;
+        }
+      }
+
+      .BtnsBlock {
+        display: flex;
+        gap: 24px;
+        margin-top: 64px;
+        @include break(500px) {
+          display: none;
+        }
+
+        > button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          max-width: 170px;
+          height: 48px;
+          padding: 9px 32px 9px 32px;
+          border-radius: 30px;
+          @include FontSemiBold(14, 21);
+          color: #ffffff;
+        }
+
+        .ProjectBtn {
+          background: none;
+          border: 1px solid #ffffff;
+        }
+
+        .ContactBtn {
+          background: $accentColor;
+        }
+      }
+    }
+
+    .Circle {
+      z-index: 12;
+      min-width: 73%;
+      height: 121%;
+      position: absolute;
+      bottom: -24px;
+      right: -22%;
+      @include break(1000px) {
+        right: -28%;
+
+      }
+      @include break(690px) {
+        right: -48%;
+        height: 95%;
+        min-width: 850px;
+      }
+      @include break(500px) {
+        left: 58%;
+        top: 50%;
+        right: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        min-height: 920px;
+        min-width: 950px;
+        bottom: -60px;
+      }
+    }
+
+    .WrSvgs {
+      display: none;
+
+      @include break(500px) {
+        position: absolute;
+        z-index: 99999;
+        bottom: -55px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: block;
+      }
+
+      .Switcher {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+

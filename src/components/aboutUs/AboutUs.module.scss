@@ -1,0 +1,98 @@
+@import "../../assets/styles/mixines";
+@import "../../assets/styles/variables";
+
+
+.Wrapper {
+  background: rgba(255, 255, 255, 1);
+  @include CommonWrapper;
+  height: 100%;
+  overflow: hidden;
+  padding: 0px 50px 100px 50px;
+
+  @include break(900px) {
+    padding: 0px 25px 72px 25px;
+  }
+  @include break(540px) {
+    padding: 0px 16px 72px 16px;
+  }
+
+  .Container {
+    @include CommonContainer;
+    padding-top: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include break(900px) {
+      padding-top: 64px;
+    }
+
+    .Title {
+      @include FontSemiBold(32, 44);
+      font-family: 'Popins-Bold';
+      text-align: center;
+      max-width: 900px;
+      @include Dott;
+      @include break(540px) {
+        @include FontSemiBold(24, 33);
+        text-align: center !important;
+        font-family: 'Popins-Bold';
+      }
+
+    }
+
+    .Desc {
+      margin-top: 30px;
+      @include FontRegular(18, 28);
+      color: rgba(0, 0, 0, 1);
+      text-align: center;
+      max-width: 720px;
+    }
+
+    .OurStacks {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 70px;
+      gap: 24px;
+      @include break(900px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include break(800px) {
+        gap: 16px;
+      }
+      @include break(540px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .Stack {
+        background: rgba(245, 245, 245, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 32px;
+        border-radius: 10px;
+        @include break(900px) {
+          padding: 24px;
+        }
+
+        .StackTitle {
+          @include FontSemiBold(24, 37);
+          @include Dott;
+          margin-bottom: 16px;
+          @include break(540px) {
+            margin-bottom: 2px;
+          }
+          @include break(540px) {
+            @include FontSemiBold(21, 30);
+          }
+        }
+
+        .DescTitle {
+          max-width: 315px;
+          @include FontRegular(14, 24);
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+}

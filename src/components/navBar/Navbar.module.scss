@@ -1,0 +1,93 @@
+@import "../../assets/styles/mixines";
+@import "../../assets/styles/variables";
+
+
+.Wrapper {
+  background: rgba(11, 5, 2, 1);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  @include CommonWrapper;
+  @include break(1050px) {
+    padding-bottom: 16px;
+  }
+
+  .Container {
+    @include CommonContainer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    > svg {
+      cursor: pointer;
+    }
+
+    > nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 56px;
+      @include break(650px) {
+        display: none;
+      }
+
+      > li {
+        .Link {
+          @include FontRegular(16, 24);
+          cursor: pointer;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 0px;
+            height: 1px;
+            background: $accentColor;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: -5px;
+              width: 100%;
+              height: 1px;
+              background: #ffffff;
+              left: 0;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+
+        .ActiveLink {
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 100%;
+            height: 1px;
+            background: $accentColor;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .ContactBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      padding: 9px 32px 9px 32px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 30px;
+      @include FontSemiBold(14, 21);
+      cursor: pointer;
+    }
+  }
+}
