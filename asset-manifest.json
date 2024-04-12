@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/crazyD/static/css/main.99f115df.css",
+    "main.js": "/crazyD/static/js/main.e6d250e8.js",
+    "static/js/453.68693753.chunk.js": "/crazyD/static/js/453.68693753.chunk.js",
+    "static/media/IMG_9899-ezgif.com-crop1.gif": "/crazyD/static/media/IMG_9899-ezgif.com-crop1.ec295151bbd172b86b91.gif",
+    "static/media/Poppins-Regular.ttf": "/crazyD/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/crazyD/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/crazyD/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/crazyD/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-Black.ttf": "/crazyD/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/payFlow.png": "/crazyD/static/media/payFlow.bcf28d3755cade1301ff.png",
+    "static/media/android.png": "/crazyD/static/media/android.2c550de78987ec63234c.png",
+    "static/media/p2p2.png": "/crazyD/static/media/p2p2.95dd3328ebcfd93c4c1e.png",
+    "static/media/b2b.png": "/crazyD/static/media/b2b.b5a83f7cf2bb00dedb34.png",
+    "static/media/scrollDown.svg": "/crazyD/static/media/scrollDown.3d5ddf3739416c9909ee97d0f5ac9f6f.svg",
+    "static/media/Illustration.png": "/crazyD/static/media/Illustration.86f09c4655373776896b.png",
+    "static/media/PayFlow3.png": "/crazyD/static/media/PayFlow3.5bfda71053a92f3fddd8.png",
+    "static/media/andrid2.png": "/crazyD/static/media/andrid2.bd6f7bc7646f83a405c7.png",
+    "static/media/p2pSec.png": "/crazyD/static/media/p2pSec.4b967dfcd3a4d30fe8e9.png",
+    "static/media/CrazyDev1.svg": "/crazyD/static/media/CrazyDev1.44cd6ad7f15fadd4facaa50e0005ccbf.svg",
+    "static/media/CrazyDev.svg": "/crazyD/static/media/CrazyDev.fa7d72a11d98fc74d811b89e240debd7.svg",
+    "index.html": "/crazyD/index.html",
+    "static/media/Swither.svg": "/crazyD/static/media/Swither.bec21fbe8805755de6188b966b401c08.svg",
+    "main.99f115df.css.map": "/crazyD/static/css/main.99f115df.css.map",
+    "main.e6d250e8.js.map": "/crazyD/static/js/main.e6d250e8.js.map",
+    "453.68693753.chunk.js.map": "/crazyD/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99f115df.css",
+    "static/js/main.e6d250e8.js"
+  ]
+}
